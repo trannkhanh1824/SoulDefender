@@ -17,7 +17,6 @@ import static Main.GameStates.*;
 public class Menu extends GameScene implements SceneMethods {
 
     private MyButton bPlaying, bEdit, bSettings, bQuit;
-    private PlayMusic playMusic;
 
     public Menu(Game game) {
         super(game);
