@@ -77,7 +77,7 @@ public class PlayMusic {
                 break;
 
             case GAME_OVER:
-                playMusic("res/gameover.wav");
+                playMusic("res/lose.wav");
                 break;
         }
     }
