@@ -287,9 +287,6 @@ public class Toolbar extends Bar {
     }
 
     public void savedNotification(Graphics g) {
-        g.setColor(Color.WHITE);
-        g.fillRect(540, 720, 100, 100);
-        g.drawRect(540, 720, 100, 100);
         g.setFont(new Font("Times New Roman", Font.PLAIN, 30));
         g.setColor(Color.BLACK);
         g.drawString("Saved!", 550, 750);

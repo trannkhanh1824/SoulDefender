@@ -457,6 +457,7 @@ public class ActionBar extends Bar {
         int waveleft = size - (current + 1);
         if (lives > 0 && waveleft == 0 && remaining == 0) {
             BufferedImage background = getWonLogo();
+            g.drawImage(background, 160, 80, 320,320, null);
         }
     }
 
