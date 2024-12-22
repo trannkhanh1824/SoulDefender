@@ -134,13 +134,13 @@ public class Constants {
         public static int GetStartHealth(int enemyType) {
             switch (enemyType) {
                 case MONKEY:
-                    return 1;
+                    return 70;
                 case BIRD:
-                    return 1;
+                    return 50;
                 case PHARAON:
-                    return 1;
+                    return 150;
                 case TURTLE:
-                    return 1;
+                    return 100;
             }
             return 0;
         }

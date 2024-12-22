@@ -1,25 +1,17 @@
 package Scenes;
 
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 
-import Audio.PlayMusic;
 import Enemy.Enemy;
 import Helps.LoadSave;
 import Main.Game;
-import Main.GameStates;
 import Manager.*;
 import Manager.ProjectileManager;
 import Object.*;
 import UI.ActionBar;
 import UI.MyButton;
-
-import javax.imageio.ImageIO;
 
 import static Helps.Constants.Tiles.GRASS_TILE;
 import static Main.GameStates.*;
@@ -27,7 +19,6 @@ import static Main.GameStates.*;
 public class Playing extends GameScene implements SceneMethods {
 
     private int[][] lvl;
-    private MyButton bMusic;
     private ActionBar actionBar;
     private int mouseX, mouseY;
     private EnemyManager enemyManager;
@@ -38,13 +29,11 @@ public class Playing extends GameScene implements SceneMethods {
     private Tower selectedTower;
     private int goldTick;
     private boolean gamePaused;
-    private PlayMusic playMusic;
     private MyButton myButton;
 
     public Playing(Game game) {
         super(game);
         loadDefaultLevel();
-        bMusic = new MyButton("Music", 2, 2, 50, 30);
         actionBar = new ActionBar(0, 640, 640, 160, this);
         enemyManager = new EnemyManager(this, start, end);
         towerManager = new TowerManager(this);

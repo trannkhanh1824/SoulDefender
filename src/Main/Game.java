@@ -23,7 +23,6 @@ public class Game extends JFrame implements Runnable {
     private Editing editing;
     private GameOver gameOver;
     private TileManager tileManager;
-    private PlayMusic playMusic;
 
     public Game() {
 
@@ -98,7 +97,7 @@ public class Game extends JFrame implements Runnable {
                 PlayMusic.playMusic("res/play.wav");
                 break;
             case GAME_OVER:
-                PlayMusic.playMusic("res/gameover.wav");
+                PlayMusic.playMusic("res/lose.wav");
                 break;
             case EDIT:
                 PlayMusic.playMusic("res/edit.wav");
@@ -107,7 +106,6 @@ public class Game extends JFrame implements Runnable {
                 PlayMusic.continueMusic();
                 break;
             default:
-                PlayMusic.stopMusic();
                 break;
         }
     }

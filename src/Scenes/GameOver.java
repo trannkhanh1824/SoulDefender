@@ -18,11 +18,9 @@ import static Main.GameStates.*;
 public class GameOver extends GameScene implements SceneMethods {
 
     private MyButton bReplay, bMenu, bEdit;
-    private PlayMusic playMusic;
 
     public GameOver(Game game) {
         super(game);
-        playMusic = new PlayMusic();
         initButtons();
     }
 

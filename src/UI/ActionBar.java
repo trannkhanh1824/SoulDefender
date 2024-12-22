@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.text.DecimalFormat;
 
-import Audio.PlayMusic;
 import Helps.Constants.Towers;
 import Helps.LoadSave;
 import Main.Game;
@@ -20,13 +19,12 @@ import javax.imageio.ImageIO;
 public class ActionBar extends Bar {
 
     private final Playing playing;
-    private MyButton bMenu, bPause, bReplay, bMusic;
+    private MyButton bMenu, bPause, bReplay;
     private static Game game;
     private MyButton[] towerButtons;
     private Tower selectedTower;
     private Tower displayedTower;
     private MyButton sellTower, upgradeTower;
-    private PlayMusic playMusic;
     private DecimalFormat formatter;
     private int gold = 100;
     private boolean showTowerCost;

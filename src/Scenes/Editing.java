@@ -4,7 +4,6 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
-import Audio.PlayMusic;
 import Helps.LoadSave;
 import Main.Game;
 import Object.PathPoint;
@@ -25,8 +24,6 @@ public class Editing extends GameScene implements SceneMethods {
 
     public Editing(Game game) {
         super(game);
-//        PlayMusic playMusic = new PlayMusic();
-//        PlayMusic.playMusic("res/edit.wav");
         loadDefaultLevel();
         toolbar = new Toolbar(0, 640, 640, 160, this);
     }

@@ -2,10 +2,7 @@ package Scenes;
 
 import java.awt.image.BufferedImage;
 
-import Audio.PlayMusic;
 import Main.Game;
-
-import javax.swing.*;
 
 public class GameScene {
 

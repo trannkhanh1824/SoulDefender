@@ -61,25 +61,4 @@ public class PlayMusic {
         this.playMusic = playMusic;
     }
 
-    public static void playMusicState() {
-        // Play the music
-        switch (gameState) {
-            case MENU:
-                PlayMusic.playMusic("res/mainmenu.wav");
-                break;
-
-            case EDIT:
-                playMusic("res/edit.wav");
-                break;
-
-            case PLAYING:
-                playMusic("res/play.wav");
-                break;
-
-            case GAME_OVER:
-                playMusic("res/lose.wav");
-                break;
-        }
-    }
-
 }
